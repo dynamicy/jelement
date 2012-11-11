@@ -3,143 +3,107 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title></title>
 
-<meta name="keywords" content="video,html5,flash,mp4">
-
-<link href="styles/subline.css" media="screen" rel="stylesheet" type="text/css" />
-
+<link type="text/css" href="styles/subline.css" media="screen" rel="stylesheet">
 <link type="text/css" href="styles/jquery.supertabs.css" rel="stylesheet">
-<link type="text/css" href="styles/embed.css" rel="stylesheet">
 <link type="text/css" href="styles/application.css" rel="stylesheet">
-<link type="text/css" href="styles/flarevideo.css" rel="stylesheet">
-<link type="text/css" href="styles/flarevideo.default.css" rel="stylesheet" class="flareTheme">
-
-<style type="text/css" media="screen">
-    #content .supertabs {
-      height: 330px;
-    }
-    
-    #video video,
-    #video .flash {
-      height: 340px;
-      overflow: none;  
-    }
-
-    #content .themes li {
-      cursor: pointer;
-      -webkit-transition: color 0.5s linear;
-      -moz-transition: color 0.5s linear;
-    }
-
-    #content .themes li:hover {
-      color: #fff;
-    }
-</style>
+<link type="text/css" href="example_ticker.css" rel="stylesheet">
 
 <script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
 <script type="text/javascript" src="scripts/jquery.hashchange.js"></script>
 <script type="text/javascript" src="scripts/jquery.supertabs.js"></script>
 <script type="text/javascript" src="scripts/jquery.ui.slider.js"></script>
 <script type="text/javascript" src="scripts/jquery.flash.js"></script>
 <script type="text/javascript" src="scripts/flarevideo.js"></script>
 <script type="text/javascript" src="scripts/application.js"></script>
+<script type="text/javascript" src="jquery.zrssfeed.min.js"></script>
+<script type="text/javascript" src="jquery.vticker.js"></script>
   
-<script type="text/javascript" charset="utf-8">
-    jQuery(function($){      
-      fv = $("#video").flareVideo({
-        poster: "flarevideo/examples/volcano.png",
-        flashSrc: "flarevideo/media/FlareVideo.swf",
-        autobuffer: false,
-        preload: false,
-      });
-      fv.load([
-        {
-          src:  'http://eribium.org/osgroup/flarevideo/flarevideo/examples/volcano.mp4',
-          type: 'video/mp4'
-        },
-        {
-          src:  'http://eribium.org/osgroup/flarevideo/flarevideo/examples/volcano.ogv',
-          type: 'video/ogg; codecs="theora, vorbis"'
-        }
-      ]);
-      
-      $(".panel.themes [data-theme]").click(function(){
-        var theme = $(this).attr("data-theme");
-        $(".flareTheme").attr({href: "flarevideo." + theme + ".css"});
-        $("#content .supertabs").delay(800).animate({height: $("#content .supertab-active").height()});
-      });
-    });
-</script>
+<script type="text/javascript">
+$(document).ready(function () 
+{
+	$('#ticker1').rssfeed('http://feeds.bbc.co.uk/iplayer/highlights/tv/list',
+	{
+		snippet: false
+	}, function(e) 
+	{
+		$(e).find('div.rssBody').vTicker(
+		{
+			showItems: 1
+		});
+	});
+});
+</script>  
   
 </head>
 <body class=' features'>
-  <div id="outer">
-  <div id="inner">
-
-    <div id="header">
-      <h1 id="title">
-        <a href="#overview">Smart Your Life</a>
-      </h1>
-      <ul>
-        <li class="current"><a href="#overview">News</a></li>
-        <li><a href="#docs">Applicate</a></li>
-        <li><a href="#about">Video</a></li>
-      </ul>
+                                <div id="ticker1"></div>
+<div id="outer">
+    <div id="inner">
+        <div id="header">
+            <h1 id="title">
+                <a href="#overview">Smart Your Life</a>
+            </h1>
+            <ul>
+                <li class="current">
+                    <a href="#overview">News</a>
+                </li>
+                <li>
+                    <a href="#docs">Applicate</a>
+                </li>
+                <li>
+                    <a href="#about">Video</a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <div class="supertabs">
+                <div data-tab="overview" class="supertab-active">
+                    <div class='content_wrapper'>
+                        <section class='features_boxes'>
+                            <ul class='scroll_links'>
+                                <li>
+                                    <a href='#works_everywhere'>
+                                    <img alt="Universal support" height="82" src="images/universal_support.png" width="110" />
+                                    <strong>Universal support</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='#always_up_to_date'>
+                                    <img alt="Always up-to-date" height="74" src="images/always_up_to_date.png" width="104" />
+                                    <strong>Always up-to-date</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='#fast_and_reliable'>
+                                    <img alt="Fast and reliable" height="82" src="images/fast_and_reliable.png" width="79" />
+                                    <strong>Fast &amp; reliable</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='#video_code_generator'>
+                                    <img alt="Video Code Generator" height="115" src="images/video_generator.png" style="margin-top:0" width="133" />
+                                    <strong>Video Code Generator</strong>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+                <!-- /default-tab -->
+                <div data-tab="docs">
+                    <br>
+                    <p>hello</p>
+                </div>
+                <div data-tab="about">
+                    <iframe src="http://www.interactivepixel.net/ccVideoBgYV/index_fixed2.html"
+                    width="600" height="400" marginwidth="0" marginheight="0" scrolling="no"
+                    frameborder="0" align="center">
+                    </iframe>
+                </div>
+            </div>
+        </div>
     </div>
-  
-    <div id="content">
-        <div class="supertabs">
-          
-          <div data-tab="overview" class="supertab-active">
-              <div class='content_wrapper'>
-                  <section class='features_boxes'>
-           <ul class='scroll_links'>
-                <li>
-                    <a href='#works_everywhere'>
-                    <img alt="Universal support" height="82" src="images/universal_support.png" width="110" />
-                    <strong>Universal support</strong>
-                    </a>
-                </li>
-                <li>
-                    <a href='#always_up_to_date'>
-                    <img alt="Always up-to-date" height="74" src="images/always_up_to_date.png" width="104" />
-                    <strong>Always up-to-date</strong>
-                    </a>
-                </li>
-                <li>
-                    <a href='#fast_and_reliable'>
-                    <img alt="Fast and reliable" height="82" src="images/fast_and_reliable.png" width="79" />
-                    <strong>Fast &amp; reliable</strong>
-                    </a>
-                </li>
-                <li>
-                    <a href='#video_code_generator'>
-                    <img alt="Video Code Generator" height="115" src="images/video_generator.png" style="margin-top:0" width="133" />
-                    <strong>Video Code Generator</strong>
-                    </a>
-                </li>
-            </ul>    
-</section>
-              </div>
-       
-          </div> <!-- /default-tab -->
-        
-          <div data-tab="docs">
-            <br>
-          </div>
-          
-          <div data-tab="about">
-             <iframe src="http://www.interactivepixel.net/ccVideoBgYV/index_fixed2.html" 
-             	width="600" height="400" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" align="center">
-             </iframe>          
-          </div>
-        
-        </div> <!-- /tabs -->
-    </div> <!-- /content -->
-  
-   
-    
-  </div>
-  </div>
-  
+</div>
 </body>
 </html>
