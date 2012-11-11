@@ -1,29 +1,47 @@
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>FlareVideo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
 
-  <meta name="description" content="Free HTML5 and Flash video player">
-  <meta name="keywords" content="video,html5,flash,mp4">
+<meta name="keywords" content="video,html5,flash,mp4">
 
-  <link rel="stylesheet" href="jquery.supertabs.css" type="text/css">
-  <link rel="stylesheet" href="embed.css" type="text/css">
-  <link rel="stylesheet" href="application.css" type="text/css">
+<link type="text/css" href="styles/jquery.supertabs.css" rel="stylesheet">
+<link type="text/css" href="styles/embed.css" rel="stylesheet">
+<link type="text/css" href="styles/application.css" rel="stylesheet">
+<link type="text/css" href="styles/flarevideo.css" rel="stylesheet">
+<link type="text/css" href="styles/flarevideo.default.css" rel="stylesheet" class="flareTheme">
 
-  <link rel="stylesheet" href="flarevideo.css" type="text/css">
-  <link class="flareTheme" rel="stylesheet" href="flarevideo.default.css" type="text/css">
+<style type="text/css" media="screen">
+    #content .supertabs {
+      height: 330px;
+    }
+    
+    #video video,
+    #video .flash {
+      height: 340px;
+      overflow: none;  
+    }
 
-  <script src="jquery.js" type="text/javascript"></script>
-  <script src="jquery.hashchange.js" type="text/javascript"></script>
-  <script src="jquery.supertabs.js" type="text/javascript"></script>
+    #content .themes li {
+      cursor: pointer;
+      -webkit-transition: color 0.5s linear;
+      -moz-transition: color 0.5s linear;
+    }
+
+    #content .themes li:hover {
+      color: #fff;
+    }
+</style>
+
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/jquery.hashchange.js"></script>
+<script type="text/javascript" src="scripts/jquery.supertabs.js"></script>
+<script type="text/javascript" src="scripts/jquery.ui.slider.js"></script>
+<script type="text/javascript" src="scripts/jquery.flash.js"></script>
+<script type="text/javascript" src="scripts/flarevideo.js"></script>
+<script type="text/javascript" src="scripts/application.js"></script>
   
-  <script src="jquery.ui.slider.js" type="text/javascript"></script>
-  <script src="jquery.flash.js" type="text/javascript"></script>
-  <script src="flarevideo.js" type="text/javascript"></script>
-  
-  <script src="application.js" type="text/javascript"></script>
-  
-  <script type="text/javascript" charset="utf-8">
+<script type="text/javascript" charset="utf-8">
     jQuery(function($){      
       fv = $("#video").flareVideo({
         poster: "flarevideo/examples/volcano.png",
@@ -48,29 +66,8 @@
         $("#content .supertabs").delay(800).animate({height: $("#content .supertab-active").height()});
       });
     });
-  </script>
+</script>
   
-  <style type="text/css" media="screen">
-    #content .supertabs {
-      height: 330px;
-    }
-    
-    #video video,
-    #video .flash {
-      height: 340px;
-      overflow: none;  
-    }
-
-    #content .themes li {
-      cursor: pointer;
-      -webkit-transition: color 0.5s linear;
-      -moz-transition: color 0.5s linear;
-    }
-
-    #content .themes li:hover {
-      color: #fff;
-    }
-  </style>
 </head>
 <body>
   <div id="outer">
