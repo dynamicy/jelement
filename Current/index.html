@@ -5,6 +5,8 @@
 
 <meta name="keywords" content="video,html5,flash,mp4">
 
+<link href="styles/subline.css" media="screen" rel="stylesheet" type="text/css" />
+
 <link type="text/css" href="styles/jquery.supertabs.css" rel="stylesheet">
 <link type="text/css" href="styles/embed.css" rel="stylesheet">
 <link type="text/css" href="styles/application.css" rel="stylesheet">
@@ -69,7 +71,7 @@
 </script>
   
 </head>
-<body>
+<body class=' features'>
   <div id="outer">
   <div id="inner">
 
@@ -78,9 +80,9 @@
         <a href="#overview">Smart Your Life</a>
       </h1>
       <ul>
-        <li class="current"><a href="#overview">Overview</a></li>
-        <li><a href="#docs">Docs</a></li>
-        <li><a href="#about">About</a></li>
+        <li class="current"><a href="#overview">News</a></li>
+        <li><a href="#docs">Applicate</a></li>
+        <li><a href="#about">Video</a></li>
       </ul>
     </div>
   
@@ -88,102 +90,44 @@
         <div class="supertabs">
           
           <div data-tab="overview" class="supertab-active">
-            <div class="lhc">
-              <div id="video"></div>
-            </div>
-
-            <div class="rhc">
-              <div class="panels">
-                <div class="panel">
-                  <h3>Features</h3>
-                  <ul>
-                    <li>HTML5 video with Flash fallback</li>
-                    <li>Easy CSS/HTML/JS customization and theming</li>
-                    <li>Full screen support</li>
-                    <li>Completely open source and free for commercial use</li>
-                  </ul>
-                </div>
-        
-                <div class="panel themes">
-                  <h3>Theme Example</h3>
-                  <ul>
-                    <li data-theme="default">Default theme</li>
-                    <li data-theme="vimeo">Vimeo theme</li>
-                    <li data-theme="spotify">Spotify theme</li>
-                  </ul>
-                </div>
-        
-                <div class="panel download">
-                  <h3>Download</h3>
-                  <a href="http://github.com/maccman/flarevideo/zipball/1.2" class="cta">Download Version 1.2</a>
-                  <a href="http://github.com/maccman/flarevideo" class="cta white">Github Source</a>
-                </div>
-          
+              <div class='content_wrapper'>
+                  <section class='features_boxes'>
+           <ul class='scroll_links'>
+                <li>
+                    <a href='#works_everywhere'>
+                    <img alt="Universal support" height="82" src="images/universal_support.png" width="110" />
+                    <strong>Universal support</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href='#always_up_to_date'>
+                    <img alt="Always up-to-date" height="74" src="images/always_up_to_date.png" width="104" />
+                    <strong>Always up-to-date</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href='#fast_and_reliable'>
+                    <img alt="Fast and reliable" height="82" src="images/fast_and_reliable.png" width="79" />
+                    <strong>Fast &amp; reliable</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href='#video_code_generator'>
+                    <img alt="Video Code Generator" height="115" src="images/video_generator.png" style="margin-top:0" width="133" />
+                    <strong>Video Code Generator</strong>
+                    </a>
+                </li>
+            </ul>    
+</section>
               </div>
-            </div>
+       
           </div> <!-- /default-tab -->
         
           <div data-tab="docs">
-            <h3>Formats</h3>
-              Format supported depends on your browser. 
-              <ul>
-                <li>All browsers: MP4, FLV</li>
-                <li>Firefox: Ogg</li>
-                <li>Safari: MP4, MOV</li>
-              </ul>
-
-            <h3>Browser support</h3>
-            <ul>
-              <li>Safari</li>
-              <li>Firefox</li>
-              <li>IE 7 >=</li>
-            </ul>
-
-            <h3>Requirements</h3>
-            <ul>
-              <li><a href="http://jquery.com">jQuery</a></li>
-              <li><a href="http://jquery.lukelutman.com/plugins/flash">jquery.flash.js</a></li>
-              <li><a href="http://jqueryui.com">jquery.ui.slider</a></li>
-            </ul>
-            
-            <h3>Installation</h3>
-
-            <div id="gist-403041" class="gist">
-                  <div class="gist-file">
-                    <div class="gist-data gist-syntax">
-                        <div class="gist-highlight"><pre><div class='line' id='LC1'>&nbsp;&nbsp;<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;stylesheets/flarevideo.css&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span></div><div class='line' id='LC2'>&nbsp;&nbsp;<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;stylesheets/flarevideo.default.css&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span></div><div class='line' id='LC3'>&nbsp;&nbsp;<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;javascripts/jquery.js&quot;</span> <span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;&lt;/script&gt;</span></div><div class='line' id='LC4'>&nbsp;&nbsp;<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;javascripts/jquery.ui.slider.js&quot;</span> <span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;&lt;/script&gt;</span></div><div class='line' id='LC5'>&nbsp;&nbsp;<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;javascripts/jquery.flash.js&quot;</span> <span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;&lt;/script&gt;</span></div><div class='line' id='LC6'>&nbsp;&nbsp;<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;javascripts/flarevideo.js&quot;</span> <span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;&lt;/script&gt;</span> </div></pre></div>
-                    </div>
-
-                    <div class="gist-meta">
-                      <a href="http://gist.github.com/raw/403041/6e8c8ace42013d126186e7904ba72294124890b5/gistfile1.html" style="float:right;">view raw</a>
-                      <a href="http://gist.github.com/403041#file_gistfile1.html" style="float:right;margin-right:10px;color:#666">gistfile1.html</a>
-                      <a href="http://gist.github.com/403041">This Gist</a> brought to you by <a href="http://github.com">GitHub</a>.
-                    </div>
-                  </div>
-            </div>
-
-            
-            <h3>Loading video files</h3>
-
-            <div id="gist-403041" class="gist">
-                  <div class="gist-file">
-                    <div class="gist-data gist-syntax">
-                        <div class="gist-highlight"><pre><div class='line' id='LC1'>&nbsp;&nbsp;<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span></div><div class='line' id='LC2'>&nbsp;&nbsp;&nbsp;&nbsp;<span class="nx">jQuery</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">$</span><span class="p">){</span></div><div class='line' id='LC3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nx">fv</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#video&quot;</span><span class="p">).</span><span class="nx">flareVideo</span><span class="p">();</span></div><div class='line' id='LC4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nx">fv</span><span class="p">.</span><span class="nx">load</span><span class="p">([</span></div><div class='line' id='LC5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="p">{</span></div><div class='line' id='LC6'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nx">src</span><span class="o">:</span>  <span class="s1">&#39;http://video_url/file.mp4&#39;</span><span class="p">,</span></div><div class='line' id='LC7'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;video/mp4&#39;</span></div><div class='line' id='LC8'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="p">}</span></div><div class='line' id='LC9'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="p">]);</span></div><div class='line' id='LC10'>&nbsp;&nbsp;&nbsp;&nbsp;<span class="p">})</span></div><div class='line' id='LC11'>&nbsp;&nbsp;<span class="nt">&lt;/script&gt;</span></div></pre></div>
-                    </div>
-
-                    <div class="gist-meta">
-                      <a href="http://gist.github.com/raw/403041/6007a0b82d74adf297e63067796d5c00f04caf84/gistfile2.html" style="float:right;">view raw</a>
-                      <a href="http://gist.github.com/403041#file_gistfile2.html" style="float:right;margin-right:10px;color:#666">gistfile2.html</a>
-                      <a href="http://gist.github.com/403041">This Gist</a> brought to you by <a href="http://github.com">GitHub</a>.
-                    </div>
-                  </div>
-            </div>
-            
-            <a class="cta" href="http://github.com/maccman/flarevideo">More &raquo;</a>
+            <br>
           </div>
           
           <div data-tab="about">
-            HELLO
              <iframe src="http://www.interactivepixel.net/ccVideoBgYV/index_fixed2.html" 
              	width="600" height="400" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" align="center">
              </iframe>          
@@ -192,9 +136,7 @@
         </div> <!-- /tabs -->
     </div> <!-- /content -->
   
-    <div id="footer">
-        <a href="http://eribium.org">Alex MacCaw</a>
-    </div>
+   
     
   </div>
   </div>
