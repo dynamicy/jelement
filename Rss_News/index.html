@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="content-language" content="en">
+
+<link type="text/css" href="example_ticker.css" rel="stylesheet">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
+<script type="text/javascript" src="jquery.zrssfeed.min.js"></script>
+<script type="text/javascript" src="jquery.vticker.js"></script>
+
+<title>RSS NEWS</title>
+
+<script type="text/javascript">
+$(document).ready(function () 
+{
+	$('#ticker1').rssfeed('http://feeds.bbc.co.uk/iplayer/highlights/tv/list',
+	{
+		snippet: false
+	}, function(e) 
+	{
+		$(e).find('div.rssBody').vTicker(
+		{
+			showItems: 1
+		});
+	});
+});
+</script>
+
+</head>
+<body>
+
+<div id="ticker1"></div>
+
+</body>
+</html>
