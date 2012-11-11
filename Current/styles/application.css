@@ -61,14 +61,15 @@ pre {
   background: -moz-radial-gradient(center 45deg, circle farthest-corner, #46546D 0%, #212731 100%);
 }
 
-#inner {
-  width: 960px;
+#inner 
+{
+  width: 1150px;
   
   position: absolute;
   top: 50px;
   left: 50%;
   
-  margin-left: -480px;
+  margin-left: -580px;
   
   background: #111317;
   

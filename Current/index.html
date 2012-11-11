@@ -6,7 +6,7 @@
 <link type="text/css" href="styles/subline.css" media="screen" rel="stylesheet">
 <link type="text/css" href="styles/jquery.supertabs.css" rel="stylesheet">
 <link type="text/css" href="styles/application.css" rel="stylesheet">
-<link type="text/css" href="example_ticker.css" rel="stylesheet">
+<link type="text/css" href="styles/example_ticker.css" rel="stylesheet">
 
 <script type="text/javascript" src="scripts/jquery.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
@@ -16,8 +16,8 @@
 <script type="text/javascript" src="scripts/jquery.flash.js"></script>
 <script type="text/javascript" src="scripts/flarevideo.js"></script>
 <script type="text/javascript" src="scripts/application.js"></script>
-<script type="text/javascript" src="jquery.zrssfeed.min.js"></script>
-<script type="text/javascript" src="jquery.vticker.js"></script>
+<script type="text/javascript" src="scripts/jquery.zrssfeed.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.vticker.js"></script>
   
 <script type="text/javascript">
 $(document).ready(function () 
@@ -37,7 +37,6 @@ $(document).ready(function ()
   
 </head>
 <body class=' features'>
-                                <div id="ticker1"></div>
 <div id="outer">
     <div id="inner">
         <div id="header">
@@ -48,8 +47,11 @@ $(document).ready(function ()
                 <li class="current">
                     <a href="#overview">News</a>
                 </li>
+                <li class="current">
+                    <a href="#applicate">Applicate</a>
+                </li>
                 <li>
-                    <a href="#docs">Applicate</a>
+                    <a href="#docs">Web</a>
                 </li>
                 <li>
                     <a href="#about">Video</a>
@@ -62,6 +64,9 @@ $(document).ready(function ()
                     <div class='content_wrapper'>
                         <section class='features_boxes'>
                             <ul class='scroll_links'>
+								<li>
+								<div id="ticker1"></div>
+								</li>                            
                                 <li>
                                     <a href='#works_everywhere'>
                                     <img alt="Universal support" height="82" src="images/universal_support.png" width="110" />
@@ -91,13 +96,22 @@ $(document).ready(function ()
                     </div>
                 </div>
                 <!-- /default-tab -->
+                 <div data-tab="applicate">
+                    <iframe src="html5.html"
+                    width="900" height="500" marginwidth="0" marginheight="0" scrolling="no"
+                    frameborder="0" align="center">
+                    </iframe>
+                </div>
                 <div data-tab="docs">
+                    <iframe src="media.html"
+                    width="900" height="500" marginwidth="0" marginheight="0" scrolling="no"
+                    frameborder="0" align="center">
+                    </iframe>
                     <br>
-                    <p>hello</p>
                 </div>
                 <div data-tab="about">
-                    <iframe src="http://www.interactivepixel.net/ccVideoBgYV/index_fixed2.html"
-                    width="600" height="400" marginwidth="0" marginheight="0" scrolling="no"
+                    <iframe src="html5.html"
+                    width="900" height="500" marginwidth="0" marginheight="0" scrolling="no"
                     frameborder="0" align="center">
                     </iframe>
                 </div>
