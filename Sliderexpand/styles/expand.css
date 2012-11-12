@@ -1,0 +1,110 @@
+.description {
+margin-left: 24px;
+}
+.description h4{
+margin-top: 9px;
+font-style: normal;
+font-weight: bold;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+font-size: 16px;
+line-height: 1.4;
+display: none;
+}
+
+.logo {
+position: absolute;
+left: 24px;
+top: 20px;
+}
+.logonav {
+  width: 115px;
+}
+
+#container, .subsection {
+  position: relative; 
+  z-index: 1;
+  min-height: 500px;
+}
+#container {
+  margin-left: 180px;
+}
+.nav {
+  margin-left: 45px;
+  margin-top: 5px;
+}
+.subsection {
+  margin-left: 200px;
+}
+
+.subcontainer {
+  min-height: 745px;
+}
+
+.sf-menu a {
+  text-shadow: 0 0 5px black;
+}
+
+.sf-menu  .current_page_item a {
+  color: #FFEDA9 !important;
+}
+
+.sf-menu a:hover {
+  color: #000 !important;
+  text-shadow: 0 0 5px white;
+}
+
+.nav {
+  margin-top: 10px;
+}
+
+.pics {
+  background-color: #333;
+}
+
+.masonry .postphoto {
+  border: 5px solid #333;
+  border-radius: 5px;
+}
+.posttext {
+  margin-top: -165px;
+}
+
+.single-post .pagename {
+  width: 672px;
+}
+.single-post .subheading.blog {
+  width: 923px;
+}
+
+.single-post .subheading.blog .subcontainer {
+  width: 600px;
+}
+
+.home.page .posttext {
+  width: 504px;
+}
+
+.home.page .posttext .pics {
+  border: 5px solid #333;
+  border-radius: 5px;
+}
+
+.home.page .posttext .xout a {
+  right: -10px;
+}
+
+.home.page .posttext .navtoggle {
+  margin-left: 10px;
+}
+
+.home.page .posttext .portfoliocontent {
+  padding-left: 10px;
+}
+
+#footer_content .button.small {
+  background: #000;
+}
+
+#footer_content .news-widget-item .size-full {
+  display:none;
+}
