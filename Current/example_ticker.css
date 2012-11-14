@@ -32,8 +32,19 @@ body {
 	padding: 0.5em;
 }
 
-#ticker1 .odd { background-color: #e8e8fc; }
-#ticker1 .even { background-color: #d4d4e8; }
+#ticker1
+{ 
+	z-index:5000;
+}
+
+#ticker1 .odd 
+{ 
+	background-color: #e8e8fc; 
+}
+#ticker1 .even 
+{ 
+	background-color: #d4d4e8; 
+}
 
 #ticker2 .odd { background-color: #e8fce8; }
 #ticker2 .even { background-color: #d4e8d4; }
