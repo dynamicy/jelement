@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Keyboard Event Properties</title>
+<script type="text/javascript" language=JavaScript src="fromkeycode.js"></script>
+        <script language="JavaScript">
+            function handlerFoo(e) 
+            {
+                var evt = e ? e : event;
+
+                if (evt.type == 'keyup') 
+                {
+                    keyCode = evt.keyCode;
+                    document.getElementById('keyupResult').innerHTML = '' + 'keyCode=' + keyCode + '<font color=blue> key: ' + fromKeyCode(keyCode) + '</font>';
+                }
+                self.status = 'keyCode=' + keyCode;
+            }
+            document.onkeyup = handlerFoo;
+        </script>
+</head>
+<body>
+<span id="keyupResult"></span>
+</body>
+</html>
