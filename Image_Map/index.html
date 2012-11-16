@@ -1,0 +1,25 @@
+<html>
+<head>
+<title></title>
+<script type="text/javascript">
+	function showTutorial(name)
+	{
+  		document.myform.stage.value = name
+	}
+</script>
+</head>
+<body>
+<form name="myform">
+   <input type="text" name="stage" size="20" />
+</form>
+<!-- Create  Mappings -->
+<img src="bg_pic.jpg" alt="HTML Map" border="0" usemap="#mouse_map"/>
+<map name="mouse_map">
+   <area shape="fan" coords="143,11,155,70,293,79,298,11" href="http://tw.yahoo.com" alt="Perl Tutorial" target="_self" 
+            onMouseOver="showTutorial('fan')" onMouseOut="showTutorial('')"/>
+
+   <area shape="bulb" coords="133,138,186,144,189,230,144,226" href="http://www.google.com" alt="HTML Tutorial" target="_self" 
+            onMouseOver="showTutorial('bulb')" onMouseOut="showTutorial('')"/>
+</map>
+</body>
+</html>
