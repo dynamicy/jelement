@@ -66,12 +66,12 @@ pre {
   width: 790px;
   
   position: absolute;
-  top: 50px;
+  top: 20px;
   left: 50%;
   
   margin-left: -395px;
   
-  background: #111317;
+  background: #101112;
   
   -webkit-border-radius: 9px; 
   -moz-border-radius: 9px;
@@ -124,7 +124,8 @@ pre {
   overflow: none;
 }
 
-#content .supertabs .supertab {
+#content .supertabs .supertab 
+{
   width: 920px;
 }
 

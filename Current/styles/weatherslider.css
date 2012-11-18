@@ -53,8 +53,6 @@
 	display: none;
 }
 
-
-
 /* Navigation */
 .ws-nav 
 {
@@ -139,14 +137,13 @@
 	font-weight: bold;
 }
 
-
-
 /* Infobox */
-
-.ws-infobox {
+.ws-infobox 
+{
 	position: absolute;
 	float: left;
-	left: 50%;
+	/*Info box position*/
+	left: 80%;
 	padding: 20px;
 	bottom: 20px;
 	z-index: 1100;
@@ -186,15 +183,16 @@
 }
 
 .ws-infobox h1 {
-	font-size: 22px;
-	padding-bottom: 5px;
+	/*Location font size*/
+	font-size: 18px;
+	padding-bottom: 0px;
 	white-space: nowrap;
 	font-weight: bold;
 	color: #ddd;
 }
 
 .ws-infobox h1 span {
-	font-size: 15px;
+	font-size: 10px;
 	text-transform: uppercase;
 	color: #ddd;
 }
@@ -202,14 +200,14 @@
 .ws-weather {
 	position: relative;
 	color: #ddd;
-	font-size: 18px;
+	font-size: 12px;
 	font-weight: bold;
 }
 
 .ws-line {
 	position: relative;
 	color: #ccc;
-	font-size: 15px;
+	font-size: 12px;
 }
 
 .ws-forecast,
@@ -227,11 +225,9 @@
 	font-weight: bold;
 }
 
-
-
 /* Backgrounds */
-
-.ws-fullbg {
+.ws-fullbg 
+{
 	width: 100%;
 	height: 100%;
 	left: 0px;
