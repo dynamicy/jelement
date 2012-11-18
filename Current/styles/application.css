@@ -1,10 +1,12 @@
-html, body {
+html, body 
+{
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-body {
+body 
+{
   background: #212731;
   color: #949CA5;
   font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lucida", sans-serif;
@@ -66,7 +68,7 @@ pre {
   width: 790px;
   
   position: absolute;
-  top: 20px;
+  top: 5px;
   left: 50%;
   
   margin-left: -395px;
@@ -78,7 +80,8 @@ pre {
 /*  -webkit-box-shadow: 0 2px 3px #000;*/  
 }
 
-#header {
+#header 
+{
   height: 60px;
   margin: 0 20px;
 }
